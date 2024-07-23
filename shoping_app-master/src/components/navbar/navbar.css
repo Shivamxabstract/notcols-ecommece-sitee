@@ -1,0 +1,121 @@
+.navbar {
+    display: flex;
+    margin-top: 25px;
+    z-index: 1;
+    width: 100vw;
+    /* position: absolute; */
+}
+
+/* .navbar{
+    border-bottom: 1px solid gray;
+    height: 5vh;
+} */
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+.navlogo{
+    width: 115px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+.center{
+    flex: 8;
+    
+}
+
+.nav_list{
+    display: flex;
+}
+
+.list_item{
+    margin-left: 20px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: cornsilk;
+    margin-top: 3px;
+
+}
+
+.dropdown_item{
+    margin: 20px;
+}
+
+.list_item:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown_list{
+    display: none;
+    position: absolute;
+    background-color: cornsilk;
+    /* margin: 3px; */
+    margin-left: 98px;
+    width: 300px;
+    top: 0;
+  }
+
+  .dropdown_item:hover .dropdown_list{
+    display: block;
+  }
+
+  .dropdown_list_item{
+    margin: 20px;
+}
+
+
+
+.right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    margin-right: 50px;
+    margin-bottom: 13px;
+    flex: 2;
+}
+
+.fa-solid{
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menuIcon{
+    display: none;
+}
+
+/* responsive for phone */
+
+@media screen and (max-width: 768px) {
+
+    .left{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuIcon{
+        margin-right: 100px;
+    }
+    .menuIcon{
+        display: block;
+    }
+    .nav_list{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .right{
+        margin-right: 12px;
+    }
+    .navlogo{
+        width: 115px;
+        cursor: pointer;
+        /* margin-left: 20px; */
+    }
+}

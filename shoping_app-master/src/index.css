@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  /* line-height: 1.6;
+  font-size: 0.9rem; */
+}
+
+h2{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 3rem;
+}
+@media screen and (max-width:768px) {
+  h2{
+    margin: 10px 0;
+    font-size: 24px;
+  }
+}

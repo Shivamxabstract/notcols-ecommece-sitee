@@ -1,0 +1,28 @@
+.brand_Images{
+    display: flex;
+    /* margin: 20px; */
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.brand_Images img{
+    width: 120px;
+    margin: 0 20px 35px 20px;
+    border: 1px solid rgb(211, 206, 206);
+    border-radius: 50%;
+}
+
+/* responsive for phone */
+
+@media screen and (max-width: 768px) {
+    .brand_Images{
+        display: flex;
+        /* margin: 20px; */
+        justify-content: center;
+        object-fit: cover;
+        /* overflow: hidden; */
+        overflow-x: scroll;
+    }
+    
+}
